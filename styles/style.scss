@@ -1,0 +1,53 @@
+// Police d'écriture importé depuis google fonts : Montserrat Regular 400 & Medium 500
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+//scss bootstrap pour les différents coloris proposés sur cette page: https://getbootstrap.com/docs/5.1/customize/color/
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+
+// Sources:
+// - GoogleFonts
+// - https://cssgradient.io/ pour les dégradés
+// - freepng.fr pour les images avec fond transparent
+
+body{
+    margin: 0;
+    background: rgb(31,31,31);
+    background: linear-gradient(180deg, rgba(31,31,31,1) 0%, $blue-700 100%);
+}
+
+a, p{font-family: 'Montserrat', Regular;}
+h1, h2, h3{font-family: 'Montserrat', Medium;}
+a{text-decoration: none;}
+
+//Css mobile-first
+
+//navbar
+@media (min-width: 800px) {
+    .mobile-navbar{display: none;}
+}
+//Fin-Navba
+
+//main-index
+.img-index1{display: flex; margin:40px auto;}
+.img-index2{display: flex; margin:auto;}
+//Fin-main-index
+
+//Fin-Css Mobile-first
+
+
+
+//Css Ecran large
+
+@media (max-width: 800px) {
+    .large-navbar{display: none; transition: 0.5s ease-in-out;}
+}
+
+.btn-nav{color: white; background: $blue-700;}
+.btn-nav:hover{color: $orange-200;}
+
+//Fin-Css Ecran large
