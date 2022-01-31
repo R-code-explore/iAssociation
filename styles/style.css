@@ -67,9 +67,9 @@ a {
 .box-second-container, .box-fourth-container {
   padding: 15px;
   border-radius: 3%;
-  background: rgba(255, 255, 255, 0.712);
-  -webkit-box-shadow: inset 9.96667px -9.96667px 9.96667px rgba(255, 255, 255, 0), inset -9.96667px 9.96667px 9.96667px white;
-          box-shadow: inset 9.96667px -9.96667px 9.96667px rgba(255, 255, 255, 0), inset -9.96667px 9.96667px 9.96667px white;
+  background: rgba(224, 230, 255, 0.925);
+  -webkit-box-shadow: inset 9.96667px -9.96667px 9.96667px rgba(0, 0, 0, 0), inset -9.96667px 9.96667px 9.96667px rgba(98, 99, 160, 0.329);
+          box-shadow: inset 9.96667px -9.96667px 9.96667px rgba(0, 0, 0, 0), inset -9.96667px 9.96667px 9.96667px rgba(98, 99, 160, 0.329);
   -webkit-backdrop-filter: blur(39.2687px);
           backdrop-filter: blur(39.2687px);
 }
@@ -187,5 +187,51 @@ a {
 
 .btn-nav:hover {
   color: #fecba1;
+}
+
+.map-container img {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+
+.second-container-event {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.second-container-event {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .second-container-event {
+    margin: 40px auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .second-container-event {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+  }
+  .map-container img {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .second-container-event {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+  }
+  .map-container img {
+    width: 450px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
