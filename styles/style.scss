@@ -13,6 +13,7 @@
 // - GoogleFonts
 // - https://cssgradient.io/ pour les dégradés
 // - freepng.fr pour les images avec fond transparent
+// - https://cssgenerator.org/box-shadow-css-generator.html Pour générer des ombres
 
 body{
     margin: 0;
@@ -116,35 +117,111 @@ a{text-decoration: none;}
 //fin de page index
 
 //page événements
-.map-container img{display: block; width: 70%; margin: auto;}
 
-.second-container-event{display: block; width: 80%; margin: auto;}
-.second-container-event{margin-bottom: 40px;}
+//Premier événement
+.first-event-container{
+    display: block;
+    width: 90%;
+    margin:20px auto;
 
-@media (max-width: 900px){
-    .second-container-event{
-        margin: 40px auto;
-    }
+    padding:10px;
+
+    //shadow
+    box-shadow: 10px 10px 28px -4px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 10px 10px 28px -4px rgba(0,0,0,0.37);
+    -moz-box-shadow: 10px 10px 28px -4px rgba(0,0,0,0.37);
 }
 
-@media (min-width: 900px){
-    .second-container-event{
+.first-event-description{
+    text-align: start;
+    color:white;
+    margin-top: 20px;
+}
+
+.map-first-event{height: 280px; border-radius: 3%;}
+.first-event-map-container{
+    display: block;
+    margin:auto;
+} .first-event-map-container p{color:white; margin-top:20px;}
+
+//Ecran Large
+@media (min-width: 800px) {
+    .first-event-container{
         display: flex;
-        width: 80%;
+        width: 750px;
+        margin:20px auto;
     }
 
-    .map-container img{width: 350px;}
+    .map-first-event{width: 450px; height: 280px; border-radius: 3%;}
+    .first-event-description{width: 240px; margin: 20px auto;}
 }
 
-@media (min-width: 1200px){
-    .second-container-event{
+@media (min-width: 1200px) {
+    .first-event-container{
         display: flex;
         width: 70%;
+        margin:20px auto;
     }
 
-    .map-container img{width: 450px;}
+    .map-first-event{width: 450px; height: 280px; border-radius: 3%;}
+    .first-event-description{width: 400px; margin: 20px auto;}
+
+    .first-event-map-container{margin: auto auto auto 20px;}
 }
 
-//fin page événements
+//Fin Premier événement
 
-//Fin-Css Ecran large
+//Deuxième événement
+.second-event-container{
+    display: block;
+    width: 90%;
+    margin:20px auto;
+
+    padding:10px;
+
+    //shadow
+    box-shadow: 10px 10px 28px -4px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 10px 10px 28px -4px rgba(0,0,0,0.37);
+    -moz-box-shadow: 10px 10px 28px -4px rgba(0,0,0,0.37);
+}
+
+.second-event-description{
+    text-align: start;
+    color:white;
+    margin-top: 20px;
+}
+
+.map-second-event{height: 280px; border-radius: 3%;}
+.second-event-map-container{
+    display: block;
+    margin:auto;
+} .second-event-map-container p{color:white; margin-top:20px;}
+
+//Ecran Large
+@media (min-width: 800px) {
+    .second-event-container{
+        display: flex;
+        width: 750px;
+        margin:20px auto;
+    }
+
+    .map-second-event{width: 450px; height: 280px; border-radius: 3%;}
+    .second-event-description{width: 240px; margin: 20px auto;}
+}
+
+@media (min-width: 1200px) {
+    .second-event-container{
+        display: flex;
+        width: 70%;
+        margin:20px auto;
+    }
+
+    .map-second-event{width: 450px; height: 280px; border-radius: 3%;}
+    .second-event-description{width: 400px; margin: 20px auto;}
+
+    .second-event-map-container{margin: auto auto auto 20px;}
+}
+
+//Fin Deuxième événement
+
+//fin page événements
