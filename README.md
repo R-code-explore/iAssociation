@@ -1,6 +1,8 @@
 # iAssociation_git
 iAssociation open source | A web integration project (front-end).
 
+Project visible here: https://iassociation.netlify.app/
+
 FR: Initialement un projet prévu pour l'école, j'ai également décider de partager mon code source sur github.
 Ce projet / site, a pour but de présenter une association fictive travaillant et partageant leurs connaissances sur l'intelligence artificielle.
 
